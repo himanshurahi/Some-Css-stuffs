@@ -1,0 +1,73 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.plans_details a {
+  text-decoration: none;
+  color: black;
+}
+
+.plans_details h2 {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  background: #8c489f;
+  color: white;
+}
+
+.plans_details h3 {
+  position: absolute;
+  left: 80%;
+  top: 0%;
+  background: #443266;
+  color: white;
+  padding: 5px 10px;
+}
+
+.plans_details {
+  width: 80%;
+  border: 2px solid #443266;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  border-left: none;
+  background: rgb(195, 195, 229, 0.9);
+  position: relative;
+  top: 20%;
+}
+
+.Premium {
+  background-color: rgba(68, 50, 102, 0.9);
+  float: right;
+  border-left: 2px solid #443266;
+  border-right: none;
+}
+
+.Premium a {
+  color: white;
+}
+
+.Premium h2 {
+  color: black;
+  background: #c3c3e5;
+}
+
+.plans_details:hover {
+  box-shadow: 2px 2px 5px black;
+}
+
+.clear_fix {
+  clear: both;
+}
+
+.background {
+  background: url("https://o.aolcdn.com/images/dims?quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-06%2F64f41f90-b654-11ea-bdfb-c07b57334bf4&client=amp-blogside-v2&signature=c115b10f023e2c6af037e22ac4aa83ce9af03f8b");
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+}
+
+.spacer {
+  height: 50px;
+}
