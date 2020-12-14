@@ -1,0 +1,60 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.testimonitals img {
+  width: 40%;
+  display: inline-block;
+  box-shadow: 2px 2px 15px black;
+}
+
+/* .testimonitals:first-of-type {
+  margin: 8% 0px;
+} */
+
+section {
+    padding: 8% 5%;
+}
+
+.testimonials_info {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+  padding: 30px;
+  vertical-align: top;
+}
+
+.testimonials_info p {
+  text-align: justify;
+}
+
+.testimonials_info h1 {
+  color: #443266;
+  font-weight: bolder;
+  font-size: xx-large;
+  line-height: 0px;
+}
+
+.testimonitals h2 {
+  color: grey;
+}
+.testimonitals h2 a {
+  text-decoration: none;
+  color: #443266;
+}
+
+.customer2 img {
+  float: right;
+}
+
+.clear_fix {
+  clear: both;
+}
+
+.testimonitals.customer2 {
+  text-align: right;
+}
+
+.customer2 .testimonials_info {
+    text-align: right;
+}

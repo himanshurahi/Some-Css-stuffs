@@ -1,6 +1,9 @@
 .product_overview {
   height: 400px;
-  background: url("https://kinsta.com/wp-content/uploads/2016/10/managed-wordpress-hosting-2.png");
+  background-image: url("https://kinsta.com/wp-content/uploads/2016/10/managed-wordpress-hosting-2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 50px;
 }
 
 .product_overview h1 {
@@ -9,6 +12,11 @@
   padding: 20px;
   font-weight: bold;
   color: white;
+  position: relative;
+  text-align: center;
+  top: 40%;
+  font-size: 50px;
+  font-weight: bold;
 }
 .plans {
   font-family: "Roboto Condensed", sans-serif;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -24,6 +24,14 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   display: inline-block;
   font-size: 25px;
+}
+
+.brand img {
+  /* height: 30px;
+  vertical-align: middle;
+  width: 30px; */
+  width: 40px;
+  vertical-align: middle;
 }
 
 .brand a {
