@@ -5,11 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="shared.css" />
-    <title>Document</title>
+    <script src="https://use.fontawesome.com/ba83bfbb15.js"></script>
+    <title>Hosting</title>
   </head>
   <body>
+    <div class="mobile_nav">
+      <ul>
+        <li>
+          <a> <i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+        </li>
+        <li>
+          <a
+            ><i class="fa fa-get-pocket" aria-hidden="true"></i
+            >&nbsp;Packages</a
+          >
+        </li>
+        <li class="start_hosting_button"><a>Start Hosting</a></li>
+      </ul>
+    </div>
+    <div class="backdrop"></div>
+    <div class="modal">
+      <h1>Do You Want To Continue</h1>
+      <button class="success">Submit</button>
+      <button class="cancel">Cancel</button>
+    </div>
+
     <nav class="navbar">
-      <div class="brand"><a href="index.html"><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/web-hosting-50-908598.png"/></a></div>
+      <div class="nav_icon">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="brand">
+        <a href="index.html"
+          ><img
+            src="https://cdn.iconscout.com/icon/premium/png-256-thumb/web-hosting-50-908598.png"
+        /></a>
+      </div>
       <ul class="main_nav_item">
         <li class="nav_item"><a href="index.html">Home</a></li>
         <li class="nav_item"><a href="packages.html">Packages</a></li>
@@ -18,6 +48,7 @@
         </li>
       </ul>
     </nav>
+
     <main>
       <section class="product_overview">
         <h1>Here you get Best Product</h1>
@@ -34,7 +65,7 @@
             <li>10Gb Storage</li>
             <li>Basic Support</li>
           </ul>
-          <button>Choose Plan</button>
+          <button class="choose_plan">Choose Plan</button>
         </div>
 
         <div class="plan_details Recommended">
@@ -47,7 +78,7 @@
             <li>10Gb Storage</li>
             <li>Basic Support</li>
           </ul>
-          <button>Choose Plan</button>
+          <button class="choose_plan">Choose Plan</button>
         </div>
 
         <div class="plan_details">
@@ -60,7 +91,7 @@
             <li>10Gb Storage</li>
             <li>Basic Support</li>
           </ul>
-          <button>Choose Plan</button>
+          <button class="choose_plan">Choose Plan</button>
         </div>
       </section>
 
@@ -68,15 +99,27 @@
         <h1>Many Good Reason To Keep Around</h1>
         <ul>
           <li>
-            <div class="key-features-image"></div>
+            <div class="key-features-image">
+              <div class="icon">
+                <i class="fa fa-users" aria-hidden="true"></i>
+              </div>
+            </div>
             <p>3,87,000 Trusting Customers</p>
           </li>
           <li>
-            <div class="key-features-image"></div>
+            <div class="key-features-image">
+              <div class="icon">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+              </div>
+            </div>
             <p>99% Uptime Garantuee</p>
           </li>
           <li>
-            <div class="key-features-image"></div>
+            <div class="key-features-image">
+              <div class="icon">
+                <i class="fa fa-bolt" aria-hidden="true"></i>
+              </div>
+            </div>
             <p>Lightning Fast CDN</p>
           </li>
         </ul>
@@ -96,5 +139,36 @@
         </div>
       </footer>
     </main>
+
+    <script>
+      var button = document.getElementsByClassName("choose_plan");
+      var backdrop = document.getElementsByClassName("backdrop")[0];
+      var modal = document.getElementsByClassName("modal")[0];
+      var cancelButton = document.getElementsByClassName("cancel")[0];
+      var nav_icon = document.getElementsByClassName("nav_icon")[0];
+      var mobile_nav = document.getElementsByClassName("mobile_nav")[0];
+      for (var index = 0; index < button.length; index++) {
+        button[index].addEventListener("click", function () {
+          backdrop.style.display = "block";
+          modal.style.display = "block";
+        });
+      }
+
+      cancelButton.addEventListener("click", function () {
+        backdrop.style.display = "none";
+        modal.style.display = "none";
+      });
+
+      backdrop.addEventListener("click", function () {
+        backdrop.style.display = "none";
+        modal.style.display = "none";
+        mobile_nav.style.display = "none";
+      });
+
+      nav_icon.addEventListener("click", function () {
+        backdrop.style.display = "block";
+        mobile_nav.style.display = "block";
+      });
+    </script>
   </body>
 </html>

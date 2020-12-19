@@ -19,7 +19,7 @@ body {
 }
 
 .brand {
-  color: black;
+  color: white;
   font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
   display: inline-block;
@@ -97,4 +97,198 @@ footer ul a {
   text-decoration: none;
   color: #443266;
   margin: 0px 15px;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  background-color: white;
+  padding: 40px;
+  top: 30%;
+  left: 33%;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 200;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 30%;
+  box-shadow: 2px 2px 10px black;
+  display: none;
+}
+
+.modal .success {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.modal .cancel {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.modal .success:hover {
+  background-color: rgb(3, 100, 3);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.modal .cancel:hover {
+  background-color: rgb(146, 3, 3);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.mobile_nav {
+  color: black;
+  position: fixed;
+  background-color: white;
+  height: 100%;
+  width: 40%;
+  z-index: 200;
+  font-family: "Roboto Condensed", sans-serif;
+  display: none;
+  box-shadow: 2px 2px 40px black;
+}
+
+.mobile_nav ul {
+  margin-top: 40%;
+  padding: 0px;
+  text-align: center;
+}
+
+.mobile_nav li {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 0px;
+}
+
+.nav_icon {
+  display: none;
+  font-size: 1.6rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* @media (max-width: 740px) {
+  .plan_details {
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .plans-title {
+    width: 20%;
+  }
+} */
+
+@media (max-width: 900px) {
+  .plan_details {
+    width: 28%;
+  }
+  .plans-title {
+    width: 25%;
+  }
+}
+
+@media (max-width: 640px) {
+  .plan_details {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .plans-title {
+    width: 41%;
+  }
+
+  .product_overview h1 {
+    font-size: 30px;
+  }
+
+  .product_overview {
+    height: 350px;
+  }
+}
+
+@media (max-width: 510px) {
+  .main_nav_item {
+    display: none;
+  }
+  .product_overview {
+    margin-top: -10px;
+  }
+
+  .product_overview {
+    height: 300px;
+  }
+
+  .brand {
+    text-align: center;
+    width: calc(100% - 50px);
+    padding: 4px 0px;
+  }
+  .nav_icon {
+    display: inline-block;
+  }
+
+  .backdrop {
+    top: 0px;
+  }
+
+  .mobile_nav {
+    top: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .plan_details {
+    width: 70%;
+  }
+  .plans-title {
+    width: 41%;
+  }
+
+  .product_overview {
+    height: 250px;
+  }
+}
+
+@media (max-width: 410px) {
+  .plans-title {
+    width: 58%;
+  }
+  .product_overview {
+    height: 200px;
+  }
+}
+
+@media (max-width: 300px) {
+  .plans-title {
+    width: 70%;
+  }
+
+  .product_overview {
+    height: 200px;
+  }
 }
