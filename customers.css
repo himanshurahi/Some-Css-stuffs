@@ -14,6 +14,7 @@ body {
 
 section {
   padding: 8% 5%;
+  min-height: calc(100vh - 80px);
 }
 
 .testimonials_info {
@@ -73,5 +74,37 @@ section {
 
   .testimonitals img {
     margin-top: 7%;
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonials_info {
+    width: 59%;
+  }
+
+  .testimonitals img {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 515px) {
+  .testimonials_info {
+    width: 100%;
+  }
+
+  .testimonitals img {
+    width: 70%;
+  }
+
+  .testimonitals {
+    text-align: center;
+  }
+
+  .customer2 img {
+    float: none;
+    margin-top: 0px;
+  }
+  .testimonitals.customer2 {
+    text-align: center;
   }
 }
