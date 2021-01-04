@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="start_hosting.css" />
+    <link rel="stylesheet" href="shared.css" />
+    <script src="https://use.fontawesome.com/ba83bfbb15.js"></script>
+    <title>Hosting</title>
+  </head>
+  <body>
+    <div class="mobile_nav">
+      <ul>
+        <li>
+          <a> <i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+        </li>
+        <li>
+          <a
+            ><i class="fa fa-get-pocket" aria-hidden="true"></i
+            >&nbsp;Packages</a
+          >
+        </li>
+        <li class="start_hosting_button"><a>Start Hosting</a></li>
+      </ul>
+    </div>
+    <div class="backdrop"></div>
+    <div class="modal">
+      <h1>Do You Want To Continue</h1>
+      <button class="success">Submit</button>
+      <button class="cancel">Cancel</button>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav_icon">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="brand">
+        <a href="index.html"
+          ><img
+            src="https://cdn.iconscout.com/icon/premium/png-256-thumb/web-hosting-50-908598.png"
+        /></a>
+      </div>
+      <ul class="main_nav_item">
+        <li class="nav_item"><a href="index.html">Home</a></li>
+        <li class="nav_item"><a href="packages.html">Packages</a></li>
+        <li class="nav_item start_hosting_button">
+          <a href="/logim">Start Hosting</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <form class="start_hosting">
+          <div class="main_form">
+            <div class="form_controls">
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username" />
+              </div>
+              <div class="form_controls">
+                <label>Password</label>
+                <input type="text" placeholder="Enter Password" />
+              </div>
+              <div class="form_controls " id="checkbox">
+                <label>Terms & Conditions</label>
+                <input type="checkbox" />
+              </div>
+              <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+      <footer>
+        <div class="main_footer">
+          <ul>
+            <li>
+              <a href="#">Support</a>
+            </li>
+
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      var button = document.getElementsByClassName("choose_plan");
+      var backdrop = document.getElementsByClassName("backdrop")[0];
+      var modal = document.getElementsByClassName("modal")[0];
+      var cancelButton = document.getElementsByClassName("cancel")[0];
+      var nav_icon = document.getElementsByClassName("nav_icon")[0];
+      var mobile_nav = document.getElementsByClassName("mobile_nav")[0];
+      for (var index = 0; index < button.length; index++) {
+        button[index].addEventListener("click", function () {
+          backdrop.style.display = "block";
+          modal.style.display = "block";
+        });
+      }
+
+      cancelButton.addEventListener("click", function () {
+        backdrop.style.display = "none";
+        modal.style.display = "none";
+      });
+
+      backdrop.addEventListener("click", function () {
+        backdrop.style.display = "none";
+        modal.style.display = "none";
+        mobile_nav.style.display = "none";
+      });
+
+      nav_icon.addEventListener("click", function () {
+        backdrop.style.display = "block";
+        mobile_nav.style.display = "block";
+      });
+    </script>
+  </body>
+</html>

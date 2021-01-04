@@ -1,0 +1,98 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+section {
+  padding: 8% 5%;
+  min-height: calc(100vh - 80px);
+}
+
+.form_controls label {
+  display: block;
+  font-weight: bold;
+}
+
+.form_controls {
+  margin: 1em auto;
+}
+
+/* .main_form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+ 
+} */
+
+.main_form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%
+}
+
+button[type="submit"] {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100px;
+  margin: 0 auto;
+}
+
+#checkbox {
+  display: flex;
+  align-items: center;
+}
+
+
+.form_controls{
+    width: 50%;
+}
+/* 
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+}
+
+.main_form {
+  width: 40%;
+  margin: auto;
+}
+
+button[type="submit"] {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #443266;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+ */
+
+ @media (max-width: 620px) {
+    .main_form {
+      width: 100%;
+      margin-top: 50px;
+    }
+    .form_controls{
+        width: 100%;
+    }
+  }
+
+
