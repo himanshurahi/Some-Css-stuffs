@@ -260,6 +260,10 @@ footer ul a {
   .mobile_nav {
     top: 0px;
   }
+
+  .navbar{
+    align-items: center;
+  }
 }
 
 @media (max-width: 450px) {
