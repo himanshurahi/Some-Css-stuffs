@@ -1,0 +1,46 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: tomato;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.logo {
+  width: 80%;
+  justify-content: center;
+  display: flex;
+}
+
+.navbar li {
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  background-color: red;
+  padding: 5px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.bottom_fade {
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5), #111);
+  height: 200px;
+}
